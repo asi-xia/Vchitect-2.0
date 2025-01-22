@@ -127,6 +127,16 @@ The results below were generated using the example prompt.
 
 The base T2V model supports generating videos with resolutions up to 720x480 and 8fps. Then，[VEnhancer](https://github.com/Vchitect/VEnhancer) is used to upscale the resolution to 2K and interpolate the frame rate to 24fps.
 
+## BibTex
+```
+@article{fan2025vchitect,
+  title={Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models},
+  author={Fan, Weichen and Si, Chenyang and Song, Junhao and Yang, Zhenyu and He, Yinan and Zhuo, Long and Huang, Ziqi and Dong, Ziyue and He, Jingwen and Pan, Dongwei and others},
+  journal={arXiv preprint arXiv:2501.08453},
+  year={2025}
+}
+```
+
 ## 🔑 License
 
 This code is licensed under Apache-2.0. The framework is fully open for academic research and also allows free commercial usage.
