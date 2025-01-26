@@ -14,10 +14,10 @@
 </div>
  
  
-</p>
-<p align="center">
-    👋 Join our <a href="https://github.com/Vchitect/Vchitect-2.0/tree/master/assets/channel/lark.jpeg" target="_blank">Lark</a> and <a href="https://discord.gg/aJAbn9sN" target="_blank">Discord</a> 
-</p>
+<div align="center">
+                      <a href="https://arxiv.org/abs/2501.08453">Paper</a> | 
+                      <a href="https://vchitect.intern-ai.org.cn/">Project Page</a>
+</div>
 
 ---
 
