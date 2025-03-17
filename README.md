@@ -32,7 +32,8 @@
 
 
 ## 🔥 Update and News
-- [2025.01.25] 🔥 Our [paper](https://arxiv.org/abs/2501.08453) is released.
+- [2025.03.17] 🔥 Our [Vchitect-T2V-Dataverse](https://huggingface.co/datasets/Vchitect/Vchitect_T2V_DataVerse) is released.
+- [2025.01.25] Our [paper](https://arxiv.org/abs/2501.08453) is released.
 - [2024.09.14] Inference code and [checkpoint](https://huggingface.co/Vchitect/Vchitect-XL-2B) are released.
 
 ## :astonished: Gallery
