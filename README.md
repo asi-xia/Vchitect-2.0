@@ -16,7 +16,8 @@
  
 <div align="center">
                       <a href="https://arxiv.org/abs/2501.08453">Paper</a> | 
-                      <a href="https://vchitect.intern-ai.org.cn/">Project Page</a>
+                      <a href="https://vchitect.intern-ai.org.cn/">Project Page</a> |
+                      <a href="https://huggingface.co/datasets/Vchitect/Vchitect_T2V_DataVerse">Dataset</a>
 </div>
 
 ---
