@@ -1,0 +1,6 @@
+.DS_Store
+venv
+.env
+output
+pretrained_weights
+__pycache__

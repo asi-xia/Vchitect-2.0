@@ -195,7 +195,7 @@ class VchitectXLPipeline():
     def __init__(
         self,
         load_path = None,
-        device = None,
+        device = "cuda",
     ):
         super().__init__()
 
