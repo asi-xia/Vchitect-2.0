@@ -1,3 +1,25 @@
+# 安装时注意：
+
+* 安装PyTorch可按下面的版本安，原仓库给的版本可能会报错：ImportError: cannot import name 'PrepareModuleOutput' from 'torch.distributed.tensor.parallel'
+```bash
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121
+```
+
+* numpy版本需要小于2
+```bash
+pip install numpy==1.26.4
+```
+
+* 需要xformers的话安装对应PyTorch版本，如：
+```bash
+pip install xformers==0.0.28.post1 --index-url https://download.pytorch.org/whl/cu124
+```
+
+* Windows安装triton报错，就安triton-windows
+```bash
+pip install triton-windows
+```
+
 # Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models
 
 <!-- <p align="center" width="100%">
