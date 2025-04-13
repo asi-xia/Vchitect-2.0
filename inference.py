@@ -24,11 +24,11 @@ def infer(args):
     with torch.cuda.amp.autocast(dtype=torch.bfloat16):
         video = pipe(
             prompt,
-            negative_prompt="",
+            negative_prompt=args.negative_prompt,
             num_inference_steps=args.steps, #50,100
             guidance_scale=args.cfg, #7.5
-            width=768,
-            height=432, #480x288  624x352 432x240 768x432
+            width=int(args.resolution.split('x')[0]),
+            height=int(args.resolution.split('x')[1]), #480x288  624x352 432x240 768x432
             frames=args.duration*8 #seconds*frames (default is 8 frames)
         )
 
@@ -51,10 +51,12 @@ import argparse
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--propmt_text", type=str)
+    parser.add_argument("--negative_prompt", type=str, default="")
     parser.add_argument("--cfg", type=float, default=7.5)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--steps", type=int, default=50)
     parser.add_argument("--duration", type=int, default=5)
+    parser.add_argument("--resolution", type=str, default='768x432')
     parser.add_argument("--save_dir", type=str, default='./output')
     parser.add_argument("--ckpt_path", type=str, default='./pretrained_weights')
     args = parser.parse_known_args()[0]
