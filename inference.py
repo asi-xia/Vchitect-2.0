@@ -12,6 +12,7 @@ def set_seed(seed):
     torch.cuda.manual_seed(seed)
 
 def infer(args):
+    print(args)
     pipe = VchitectXLPipeline(args.ckpt_path, device="cuda")
     idx = 0
     '''
@@ -20,10 +21,9 @@ def infer(args):
             for seed in range(5):
     '''
     set_seed(args.seed)
-    prompt = args.propmt_text
     with torch.cuda.amp.autocast(dtype=torch.bfloat16):
         video = pipe(
-            prompt,
+            prompt=args.propmt_text,
             negative_prompt=args.negative_prompt,
             num_inference_steps=args.steps, #50,100
             guidance_scale=args.cfg, #7.5
@@ -59,7 +59,7 @@ def main():
     parser.add_argument("--resolution", type=str, default='768x432')
     parser.add_argument("--save_dir", type=str, default='./output')
     parser.add_argument("--ckpt_path", type=str, default='./pretrained_weights')
-    args = parser.parse_known_args()[0]
+    args = parser.parse_known_args()
     infer(args)
 
 if __name__ == "__main__":
