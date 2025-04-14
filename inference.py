@@ -59,7 +59,7 @@ def main():
     parser.add_argument("--resolution", type=str, default='768x432')
     parser.add_argument("--save_dir", type=str, default='./output')
     parser.add_argument("--ckpt_path", type=str, default='./pretrained_weights')
-    args = parser.parse_known_args()
+    args = parser.parse_known_args()[0]
     infer(args)
 
 if __name__ == "__main__":
