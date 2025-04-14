@@ -50,7 +50,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--propmt_text", type=str)
+    parser.add_argument("--propmt_text", type=str, default="")
     parser.add_argument("--negative_prompt", type=str, default="")
     parser.add_argument("--cfg", type=float, default=7.5)
     parser.add_argument("--seed", type=int, default=0)
