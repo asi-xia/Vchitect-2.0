@@ -1,0 +1,23 @@
+diffusers
+accelerate
+transformers
+gradio
+torch
+torchvision
+torchdiffeq
+click
+einops
+moviepy
+sentencepiece
+protobuf
+opencv-python
+easydict
+open-clip-torch
+fairscale
+torchsde
+pytorch-lightning
+Pillow==9.5.0
+numpy==1.26.4
+xformers==0.0.28.post1 --index-url https://download.pytorch.org/whl/cu124
+triton-windows; sys_platform == 'win32'
+triton; sys_platform == 'linux'
